@@ -198,7 +198,7 @@
 			"label-install-version": "(Versioni i instaluesit: {{version}})",
 			"label-up-to-date": "Aplikacioni juaj është i përditësuar!",
 			"label-read-changelog": "Lexo proçesverbalin e ndryshimeve.",
-			"label-manual-install-required": "Ju duhet të instaloni manualisht versionin më të fundit.",
+			"label-manual-update-required": "To support the latest features and to receive the latest security patches, Obsidian needs a major installer update. You need to manually download and reinstall Obsidian.",
 			"label-download": "Download",
 			"label-new-version-ready": "Një version i ri është gati për t'u instaluar. ",
 			"label-relaunch-to-update": "Rihap aplikacionin për të kryer përditësimin.",
@@ -271,7 +271,7 @@
 			"name": "Shtojca të treta",
 			"option-restricted-mode": "Restricted mode",
 			"option-restricted-mode-description": "Restricted Mode is off. Turn on to disable community plugins.",
-			"button-turn-off": "Turn off",
+			"button-turn-on": "Turn on",
 			"option-browse-community-plugins": "Shtojcat e komunitetit",
 			"option-browse-community-plugins-description": "Kërko dhe instalo shtojca të treta të krijuara nga komuniteti ynë i mrekullueshëm.",
 			"button-browse": "Kërko",
@@ -408,6 +408,10 @@
 			"no-suggestion": "Nuk ka sugjerime...",
 			"add-to-dictionary": "Shto në fjalor"
 		},
+		"heading-suggestion": {
+			"label-no-heading": "No heading",
+			"label-heading-level": "Heading {{level}}"
+		},
 		"print-modal": {
 			"title": "Eksporto në PDF",
 			"caption": "Eksporto \"{{filename}}\" në PDF me opsionet e mëposhtme.",
@@ -486,6 +490,7 @@
 			"more-options": "Opsione të tjera",
 			"close": "Mbyll",
 			"pin": "Ngulit me thumb",
+			"unpin": "Unpin",
 			"unlink-pane": "Hiq lidhjen me panelin",
 			"link-pane": "Lidh me një panel...",
 			"delete-file": "Fshi një dokument",
@@ -500,7 +505,9 @@
 			"paste-as-plain-text": "Ngjit si tekst i thjeshtë (plain text)",
 			"select-all": "Përzgjidh të gjitha",
 			"rename-heading": "Rename this heading...",
-			"rename-blockid": "Rename this block ID..."
+			"rename-blockid": "Rename this block ID...",
+			"open-in-new-window": "Open in new window",
+			"move-to-new-window": "Move to new window"
 		},
 		"tooltip": {
 			"click-to-expand": "Kliko për të shpalosur",
@@ -520,6 +527,7 @@
 			"option-new-vault-name-description": "Zgjidh një emër për dosjen tënde fantastike.",
 			"option-new-vault-location": "Vendndodhja",
 			"option-new-vault-location-description": "Zgjidh një vendndodhje për kasafortën tënde të re.",
+			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "Reveal vault in system explorer",
 			"option-rename-vault": "Rename vault...",
 			"msg-error-rename-exists": "There is already a vault with this name.",
@@ -577,6 +585,7 @@
 			"loading-obsidian": "Obsidian po hapet...",
 			"obsidian-load-error": "Obsidian ndeshi një problem gjatë hapjes.",
 			"button-reload-app": "Rihap aplikacionin",
+			"button-reload-app-in-safe-mode": "Reload app in safe mode",
 			"button-open-another-vault": "Hap një kasafortë tjetër",
 			"loading-components": "Duke ngarkuar komponentët...",
 			"loading-plugins": "Duke ngarkuar shtojcat...",
@@ -658,7 +667,10 @@
 		"undo-close-pane": "Undo close pane",
 		"context-menu": "Show context menu under cursor",
 		"show-debug-info": "Show debug info",
-		"toggle-preview": "Ndërro mes pamjeve të përpunimit dhe afishimit"
+		"always-on-top": "Toggle window always on top",
+		"toggle-preview": "Ndërro mes pamjeve të përpunimit dhe afishimit",
+		"move-to-new-window": "Move current pane to new window",
+		"open-in-new-window": "Open current pane in new window"
 	},
 	"dialogue": {
 		"label-link-affected": "Kjo ndikon në {{links}} në {{files}}.",
@@ -708,7 +720,8 @@
 		"toggle-strikethrough": "Strikethrough",
 		"toggle-comments": "Comment",
 		"fold-all": "Fold All",
-		"unfold-all": "Unfold All"
+		"unfold-all": "Unfold All",
+		"show-debug-info": "Show Debug Info"
 	},
 	"plugins": {
 		"name": "Shtojcat",
@@ -1328,6 +1341,7 @@
 			"label-empty-file": "Bosh",
 			"label-setting-files": "Setting files",
 			"label-deleted-files": "Dokumente të fshirë",
+			"label-version-history": "Version history",
 			"label-click-to-see-history": "Kliko në një dokument të fshirë për t'i shikuar historikun.",
 			"label-create-remote-vault": "Krijo një kasafortë të largët (remote)",
 			"msg-please-enter-password": "Ju lutemi jepni një fjalëkalim.",
